@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico">
+
+</head>
+<body>
+
+    <!-- Headings tags -->
+    <h1>Hello world</h1>
+    <h2>Hello world</h2>
+    <h3>Hello world</h3>
+    <h4>Hello world</h4>
+    <h5>Hello world</h5>
+    <h6>Hello world</h6>
+
+    <!-- paragraph Tag -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto ex voluptate blanditiis quisquam quo dignissimos porro laudantium adipisci corrupti nesciunt?</p>
+
+    <!-- Anchor tag -->
+    <a href="https://www.facebook.com/" target="_blank">Click Me</a>
+
+    <!-- Formatting Tags -->
+
+    <i>Hello world</i>
+    <b>Hello world</b>
+    <strong>Hello world</strong>
+    <em>Hello world</em>
+    <mark>Hello world</mark>
+    <del>Hello world</del>
+    <span>H <sub>2</sub> O</span>
+    <span>PH <sup>3</sup></span>
+    <small>Hello world</small>
+
+    <!-- Quotation Tags -->
+    <div><p>It's a beautiful day.</p></div>
+    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam qui ab recusandae unde assumenda perferendis. Esse quis iure magnam!</blockquote>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, perspiciatis. <q>hello world</q></p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <address>Moradbad UP 244601</address>
+
+    <!-- img tag -->
+
+    <figure>
+        <img src="assets/images/banner.jpg" alt="" height="400" width="400">
+    </figure>
+
+    <!-- Video tag -->
+
+    <video controls autoplay muted>
+        <source src="assets/images/video.mp4" type="video/mp4"></source>
+    </video>
+
+    <audio controls>
+        <source src="assets/images/horse.ogv" type="audio/mp3"></source>
+    </audio>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yY0bKZNYmJs?si=5Uig1CU-DtwogCVy?controls=0&mute=1&autoplay=1&loop=1&showinfo=0&rel=0&playlist=q4w2HvoLLlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111835.25022115473!2d78.6851491131724!3d28.843278786123783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afbea2f5646c9%3A0xb8c97ce4e95398db!2sMoradabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1712034759365!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Button Tag -->
+
+    <button>Click Me</button>
+    <a href="">Hit Me</a>
+    <!-- Form  -->
+
+    <input type="text">
+    <input type="number">
+    <input type="email">
+    <input type="password">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="file">
+    <input type="range">
+    <input type="hidden">
+
+
+</body>
+</html>
