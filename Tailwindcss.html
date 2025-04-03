@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind.css</title>
+  <link rel="stylesheet" href="Task.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+  0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[poppins]">
+
+  <main>
+    <header>
+      <div class="px-[175px] py-[48px] bg-[#C2EFD4]">
+        <div class="row flex justify-between items-center">
+          <div class="navbar-brand">
+            <figure>
+
+              <img src="images/Rivo.png" alt="">
+            </figure>
+          </div>
+
+          <div class="nav-links">
+            <ul class="flex gap-[57px]">
+
+              <li><a href="#" class="text-[#224F34] font-medium uppercase text-[22px] tracking-normal 
+                leading-normal">Home</a></li>
+
+              <li><a href="#" class="text-[#224F34] font-medium uppercase text-[22px] tracking-normal
+                 leading-normal">Shop</a></li>
+
+              <li><a href="#" class="text-[#224F34] font-medium uppercase text-[22px] tracking-normal
+                 leading-normal">Feature</a></li>
+
+              <li><a href="#" class="text-[#224F34] font-medium uppercase text-[22px] tracking-normal 
+                leading-normal">Contact</a></li>
+
+            </ul>
+          </div>
+          <div class="cart-login flex">
+            <div class="cart">
+              <a href="#">
+
+                <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_266)">
+                    <path
+                      d="M26.25 7.5H22.5C22.5 5.51088 21.7098 3.60322 20.3033 2.1967C18.8968 0.790176 16.9891 0 15 0C13.0109 0 11.1032 0.790176 9.6967 2.1967C8.29018 3.60322 7.5 5.51088 7.5 7.5H3.75C2.75544 7.5 1.80161 7.89509 1.09835 8.59835C0.395088 9.30161 0 10.2554 0 11.25L0 23.75C0.00198482 25.407 0.661102 26.9956 1.83277 28.1672C3.00445 29.3389 4.59301 29.998 6.25 30H17.5C17.8315 30 18.1495 29.8683 18.3839 29.6339C18.6183 29.3995 18.75 29.0815 18.75 28.75C18.75 28.4185 18.6183 28.1005 18.3839 27.8661C18.1495 27.6317 17.8315 27.5 17.5 27.5H6.25C5.25544 27.5 4.30161 27.1049 3.59835 26.4017C2.89509 25.6984 2.5 24.7446 2.5 23.75V11.25C2.5 10.9185 2.6317 10.6005 2.86612 10.3661C3.10054 10.1317 3.41848 10 3.75 10H7.5V12.5C7.5 12.8315 7.6317 13.1495 7.86612 13.3839C8.10054 13.6183  8.41848 13.75 8.75 13.75C9.08152 13.75 9.39946 13.6183 9.63388 13.3839C9.8683 13.1495 10 12.8315 10 12.5V10H20V12.5C20 12.8315 20.1317 13.1495 20.3661 13.3839C20.6005 13.6183 20.9185 13.75 21.25 13.75C21.5815 13.75 21.8995 13.6183 22.1339 13.3839C22.3683 13.1495 22.5 12.8315 22.5 12.5V10H26.25C26.5815 10 26.8995 10.1317 27.1339 10.3661C27.3683 10.6005 27.5 10.9185 27.5 11.25V17.5C27.5 17.8315 27.6317 18.1495 27.8661 18.3839C28.1005 18.6183 28.4185 18.75 28.75 18.75C29.0815 18.75 29.3995 18.6183 29.6339 18.3839C29.8683 18.1495 30 17.8315 30 17.5V11.25C30 10.2554 29.6049 9.30161 28.9017 8.59835C28.1984 7.89509 27.2446 7.5 26.25 7.5ZM10 7.5C10 6.17392 10.5268 4.90215 11.4645 3.96447C12.4021 3.02678 13.6739 2.5 15 2.5C16.3261 2.5 17.5979 3.02678 18.5355 3.96447C19.4732 4.90215 20 6.17392 20 7.5H10Z"
+                      fill="#224F34" />
+                  </g>
+                  <g filter="url(#filter0_d_1_266)">
+                    <circle cx="27" cy="27" r="5" fill="#10FF70" />
+                  </g>
+
+                  <defs>
+                    <filter id="filter0_d_1_266" x="14" y="15" width="28" height="28" filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                      <feOffset dx="1" dy="2" />
+                      <feGaussianBlur stdDeviation="4.5" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_266" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_266" result="shape" />
+                    </filter>
+                    <clipPath id="clip0_1_266">
+                      <rect width="30" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+            <div class="loggin-btn">
+              <a href="#" class="btn">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </main>
+  <!-- Hero Section start Here -->
+  <section class="hero-sec pt-[100px] pb-[166px] bg-[#C2EFD4]">
+    <div class="container max-w-[1380px] mx-auto">
+      <div class="hero-sec-wrapper">
+        <div class="row flex items-center">
+        <div class="col">
+
+          <h1 class="text-[#224F34] font-bold text-[86px] leading-normal tracking-normal">Discover and Find your One Fashion!</h1>
+
+          <P class="text-[#267D49] font-medium text-[24px] leading-normal tracking-normal Pt-[27px]">
+            Explore Our curated collection of stylish clothing and accessories tailored to your unique teste.</P>
+
+          <a href="" class="primary-btn font-medium text-[20px] text-whit px-[60px] py-[22px] bg-[#224F34] mt
+               -[54px] inline-block">Explore Now</a>
+        </div>
+        <div class="col">
+          <figure>
+            <img src="images/hero-img.png" alt style =background-color:#43E785;>
+          </figure>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+  <!-- Hero Section Ends Here -->
+
+  <!-- best Selling section Start Here -->
+
+  <section class="best-selling pt-[114px] ">
+    <div class="container max-w-[1728px] mx-auto">
+      <div class="best-selling-wrapper">
+        <div class="best-title">
+
+          <h2 class="text-center font-medium text-[64px] text-[#224F34]">Best selling</h2>
+
+          <p class="pt-[37px] text-[22px] font-medium text-[#224F34] text-center"> Get in on the trend with
+            our curated selection of best-selling styles. </p>
+        </div>
+
+          <div class="row pt-[80px] flex gap-[30px]">
+          
+            <a href="" class="btn font-medium text-[20px] uppercase px-[41px] by-[11px] text-[#224F34] border-[#224F34]
+            rounded-[3px] mt-[80px] inline-block mx-auto">See all</a>
+            
+
+            <div class="price-wrapper pt-[8px]flex justify-center gap-[39px]">
+            </div>
+          
+            <div class="col content pt-[25px]">
+
+              <figure>
+                <img src="images/best.png" alt style= background-color:#93B9A2;>
+              </figure>
+
+              <div class="product-info pt[50px]">
+                <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+                <div class="price-wrapper pt-[8px] flex justify-center gap-[39px] ">$38.99
+                  <div class="flex justify-center">
+                  <span> 5.0</span>
+
+                  <svg class="ml-[10px]" width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_120)">
+                      <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.
+                      15123L12.0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.31522" fill="#F5D426" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0-1-120">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="col content pt-[25px]">
+
+              <figure>
+                <img src="images/best-1.png" alt style= background-color:#A9D4BA;>
+              </figure>
+
+              <div class="product-info pt[50px]">
+                <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+                <div class="price-wrapper pt[8px] flex justify-center gap-[39px] ">$38.99
+                
+                <div class="flex justify-center">
+
+                  <span> 5.0</span>
+
+                  <svg width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0-1-120)">
+                      <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.
+                      15123L12.0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.3152Z" fill="#F5D426" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0-1-120">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              </div>
+            </div>
+            
+            <div class="col content pt-[25px]">
+
+              <figure>
+                <img src="images/best-2.png" alt style= background-color:#CADCD0;>
+              </figure>
+
+              <div class="product-info pt[50px]">
+                <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+                <div class="price-wrapper pt[8px] flex justify-center gap-[39px] ">$38.99
+                <div class="flex justify-center">
+                  <span> 5.0</span>
+
+                  <svg width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0-1-120)">
+                      <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.
+                      15123L12.0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.31522" fill="#F5D426" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0-1-120">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+            
+      <!-- best Selling section Ends Here -->
+
+      <!-- Our Products Section start Here -->
+                  
+      <section class="Our Product-sec">
+       <div class="Product-wrapper pb-[97px] pt-[92px]">
+         <div class="container max-w-[1728px] mx-auto">
+          <div class="Product-title">
+          <h2 class="text-center text-[50px] text-[#224F34] font-medium">Our Products</h2>
+      </div>
+         <ul class="category- wrapper flex justify-center items-senter gap-[100px] mt-[70px]">
+           <li class="text-[22px] font-medium uppercase text-[#454545]">Sale</li>
+           <li class="text-[22px] font-medium uppercase text-[#454545] text-underline">Hot</li>
+           <li class="text-[22px] font-medium uppercase text-[#454545]">New Arrivals</li>
+           <li class="text-[22px] font-medium uppercase text-[#454545]">Accessories</li>
+         </ul>
+
+       <div class="row flex flex-wrap gap-x-[35px] gap-y-[82px] pt-[80px]">
+
+       <div class="col content w-[23.09%]">
+    <figure>
+        <img src="images/best.png" alt style= background-color:#CADCD0;>
+   </figure>
+    <div class="product-info pt[50px]">
+       <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+         <div class="price-wrapper pt[8px] flex justify-center gap-[39px] ">$38.99
+           <div class="flex justify-center">
+            <span> 5.0</span>
+  
+      <svg width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0-1-120)">
+         <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.
+                  15123L12.0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.31522" fill="#F5D426" />
+              </g>
+         <defs>
+          <clipPath id="clip0-1-120">
+             <rect width="24" height="24" fill="white" />
+             </clipPath>
+           </defs>
+          </svg>
+         </div>
+       </div>
+     </div>
+    </div>
+       <div class="col content w-[23.09%]">
+         <figure>
+             <img src="images/best.png" alt style= background-color:#CADCD0;>
+         </figure>
+             <div class="product-info pt[50px]">
+                <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+                <div class="price-wrapper pt[8px] flex justify-center gap-[39px] ">$38.99
+                <div class="flex justify-center">
+                <span> 5.0</span>
+  
+       <svg width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <g clip-path="url(#clip0-1-120)">
+         <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.
+                15123L12.0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.31522" fill="#F5D426" />
+              </g>
+          <defs>
+            <clipPath id="clip0-1-120">
+             <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+         </svg>
+       </div>
+      </div>
+    </div>
+   </div>
+    <div class="col content w-[23.09%]">
+        <figure>
+               <img src="images/best.png" alt style= background-color:#CADCD0;>
+         </figure>
+             <div class="product-info pt[50px]">
+              <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+               <div class="price-wrapper pt[8px] flex justify-center gap-[39px] ">$38.99
+               <div class="flex justify-center">
+               <span> 5.0</span>
+        
+     <svg width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <g clip-path="url(#clip0-1-120)">
+          <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.
+                 15123L12.0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.31522" fill="#F5D426" />
+              </g>
+           <defs>
+            <clipPath id="clip0-1-120">
+            <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+         </svg>
+        </div>
+      </div>
+     </div>
+  </div>
+      <div class="col content w-[23.09%]">
+         <figure>
+              <img src="images/best.png" alt style= background-color:#CADCD0;>
+         </figure>
+              <div class="product-info pt[50px]">
+               <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+               <div class="price-wrapper pt[8px] flex justify-center gap-[39px] ">$38.99
+               <div class="flex justify-center">
+                <span> 5.0</span>
+              
+           <svg width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0-1-120)">
+             <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.
+                   15123L12.0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.31522" fill="#F5D426" />
+                </g>
+            <defs>
+              <clipPath id="clip0-1-120">
+                <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+               </svg>
+              </div>
+            </div>
+        </div>
+           </div> 
+               <div class="col content w-[23.09%]">
+                     <figure>
+                           <img src="images/best.png" alt style= background-color:#CADCD0;>
+                     </figure>
+                         <div class="product-info pt[50px]">
+                         <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+                         <div class="price-wrapper pt[8px] flex justify-center gap-[39px] ">$38.99
+                         <div class="flex justify-center">
+                         <span> 5.0</span>
+                  
+          <svg width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <g clip-path="url(#clip0-1-120)">
+            <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.15123L12.
+                    0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.31522" fill="#F5D426" />
+                 </g>
+               <defs>
+                      <clipPath id="clip0-1-120">
+                          <rect width="24" height="24" fill="white" />
+                           </clipPath>
+                         </defs>
+                       </svg>
+                    </div>
+                </div>
+             </div>
+          </div>
+            <div class="col content w-[23.09%]">
+              <figure>
+                     <img src="images/best.png" alt style= background-color:#CADCD0;>
+              </figure>
+               <div class="product-info pt[50px]">
+                <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+                <div class="price-wrapper pt[8px] flex justify-center gap-[39px] ">$38.99
+                <div class="flex justify-center">
+                <span> 5.0</span>
+                        
+       <svg width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <g clip-path="url(#clip0-1-120)">
+           <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.15123L12.
+                    0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.31522" fill="#F5D426" />
+                  </g>
+               <defs>
+                  <clipPath id="clip0-1-120">
+                   <rect width="24" height="24" fill="white" />
+                   </clipPath>
+                </defs>
+              </svg>
+            </div>
+         </div>
+      </div>
+   </div>
+      <div class="col content w-[23.09%]">
+           <figure>
+                   <img src="images/best.png" alt style= background-color:#CADCD0;>
+          </figure>
+                <div class="product-info pt[50px]">
+                <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+                <div class="price-wrapper pt[8px] flex justify-center gap-[39px] ">$38.99
+                <div class="flex justify-center">
+                 <span> 5.0</span>
+                              
+       <svg width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <g clip-path="url(#clip0-1-120)">
+         <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.15123L12.
+                  0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.31522" fill="#F5D426" />
+                </g>
+              <defs>
+               <clipPath id="clip0-1-120">
+               <rect width="24" height="24" fill="white" />
+              </clipPath>
+             </defs>
+          </svg>
+       </div>
+      </div>
+    </div>
+  </div>  
+          <div class="col content w-[23.09%]">
+            <figure>
+                   <img src="images/best.png" alt style= background-color:#CADCD0;>
+            </figure>
+               <div class="product-info pt[50px]">
+               <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Regular Fit Long Sleeve Top</h6>
+               <div class="price-wrapper pt[8px] flex justify-center gap-[39px] ">$38.99
+               <div class="flex justify-center">
+                <span> 5.0</span>
+                                    
+       <svg width="24" height="24" vlewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <g clip-path="url(#clip0-1-120)">
+           <path d="M19.4672 23.3152L12.0002 17.8272L4.53323 23.3152L7.40023 14.4522L-0.0627747 8.99922H9.15123L12.
+                    0002 0.121216L14.8492 8.99922H24.0622L16.6002 14.4522L19.4672 23.31522" fill="#F5D426" />
+                  </g>
+                    <defs>
+                        <clipPath id="clip0-1-120">
+                        <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                     </svg>
+                   </div>
+                 </div>
+                </div>
+           </div>
+       </div>
+         </div>
+       </div>
+      </section>
+
+      <!-- Our Products Section Ends Here -->
+
+      <!-- Exclusive offer section Start Here -->
+
+     <section class="exclusive-offer">
+        <div class="exclusive-wrapper">
+          <div class="container max-w-[1728px] mx-auto">
+            <div class="px-[175px] py-[48px] bg-[#C2EFD4]">
+              <div class="row flex justify-between items-center">
+              <div class="col">
+                <figure>
+                  <img src="images/Exul images.png" alt="">
+                </figure>
+              </div>
+              <div class="col">
+                <h3 class="font-bold text-[66px] text-[#224F34]">Exclusive Offer</h3>
+                <p class="text-[22px] font-medium text-[#224F34]">Unlock the ultimate style upgrade with our exclusive offer
+                   Enjoy saving of up to 40% offer on our latest New Arrivals
+                </p>
+                <div class="timer flex items-center gap-[35px]">
+                  <div class="col bg-white px-[29px] py-[16px]">
+                    <h6 class="text-center texy-[32px] font-semibold text--[#224F34]">06</h6>
+                    <p>Days</p>
+                  </div>
+                    <div class="col bg-white px-[29px] py-[16px]">
+                      <h6 class="text-center texy-[32px] font-semibold text-[#224F34]">18</h6>
+                      <p>Hours</p>
+                    </div>
+                    <div class="col bg-white px-[29px] py-[16px]">
+                      <h6 class="text-center texy-[32px] font-semibold text-[#224F34]">48</h6>
+                      <p>Min</p>
+                    </div>
+                </div>
+                      <a href=""class="primary-btn font-medium text-[20px] text-white px-[60px] py-[22] bg-[#224F34]
+                      mt-[54px] inline-block">Buy Nov</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+     </section>
+      
+     <!-- Exclusive offer section Ends Here -->
+
+     <!-- Designer Clothes sectiosn Start Here -->
+
+     <section class="Designer pt-[114px] ">
+         <div class="container max-w-[1728px] mx-auto">
+           <div class="Designer-wrapper">
+            <div class="Designer-title">
+             <h2 class="text-center font-medium text-[64px] text-[#224F34]">Designer Clothes For your</h2>
+    
+             <p class="pt-[37px] text-[22px] font-medium text-[#224F34] text-center">Immerse yourself in the world
+             of luxury fashion with our meticulously crafted designer clothes!</p>
+       </div>
+    
+         <div class="row pt-[80px] flex gap-[30px]">
+              
+           <div class="col content pt-[25px]">
+    
+            <figure>
+                    <img src="images/Designer-3.png" alt style= background-color:#93B9A2;>
+            </figure>
+            <div class="product-info pt[50px]">
+             <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Accessories</h6>
+             <p class="font-medium text-[22px] text-[#373737] text-center"> complete your ensemble
+               with designer accessories such as handbags,scarves,belts,and hats. </p>
+          </div>
+      </div>
+           <div class="col content pt-[25px]">
+    
+               <figure>
+                      <img src="images/Designer-3.png" alt style= background-color:#93B9A2;>
+               </figure>
+                <div class="product-info pt[50px]">
+                 <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Accessories</h6>
+                 <p class="font-medium text-[22px] text-[#373737] text-center"> complete your ensemble
+                  with designer accessories such as handbags,scarves,belts,and hats. </p>
+           </div>
+      </div>
+          <div class="col content pt-[25px]">
+              <figure>
+                     <img src="images/Designer-3.png" alt style= background-color:#93B9A2;>
+              </figure>
+                  <div class="product-info pt[50px]">
+                  <h6 class="font-semibold text-[22px] text-center text-[#373737] ">Accessories</h6>
+                  <p class="font-medium text-[22px] text-[#373737] text-center"> complete your ensemble
+                   with designer accessories such as handbags,scarves,belts,and hats. </p>
+             </div>
+         </div>
+     </section>
+    
+       <!-- Designer Clothes sectiosn Ends Here -->
+
+       <!-- Slider start Here -->
+
+        <cestion class="testimonial-sec relative">
+          <div class="testimonial-wrapper pb-[358px] pt-[125px]">
+            <div class="container max-w-[1380] mx-auto">
+              <div class="testimonial-title">
+                <h2 class="text-center font-medium text-[50px] text-[#224F34]">Feedback Corner</h2>"
+
+               <div class="testimonial-slider swiper pt-[109] static">
+                <div class="swipper-wrapper">
+          
+                    <h5 class="text-[#224F34] text-[22px] text-semibold pt-[30px]">Emily Wilson</h5>
+                    <p class="font-medium text-[16px] text-[#6F6F6F] pt-[30]">The customer experience was exceptional from
+                       start to finish. the website is user-friendly, the checkout process was smooth, and the clothes i 
+                        ordered fit perfectly.i'm beyond satisfied!</p>
+                    </div>
+               </div>
+           </div>
+        </div>
+           <div class="swipper-wrapper">"
+          
+                <h5 class="text-[#224F34] text-[22px] text-semibold pt-[30px]">Emily Wilson</h5>
+                 <p class="font-medium text-[16px] text-[#6F6F6F] pt-[30]">The customer experience was exceptional from
+                  start to finish. the website is user-friendly, the checkout process was smooth, and the clothes i 
+                  ordered fit perfectly.i'm beyond satisfied!</p>
+               </div>
+                <div class="swipper-wrapper">"
+          
+                  <h5 class="text-[#224F34] text-[22px] text-semibold pt-[30px]">Emily Wilson</h5>
+                   <p class="font-medium text-[16px] text-[#6F6F6F] pt-[30]">The customer experience was exceptional from
+                    start to finish. the website is user-friendly, the checkout process was smooth, and the clothes i 
+                    ordered fit perfectly.i'm beyond satisfied!</p>
+                 </div>
+                    <div class="swiper-button-next after:hidden top-0 bottom-[193px]">
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.3.org/2000/svg">
+                      <path d="M8.07104 1L0.999977 8.07107" stroke="#224F34" stroke-width="2"stroke-linecap="round" />
+                      <path d="M8.07104 15.0713L0.999977 8.00022" stroke="#224F34" stroke-width="2" stroke-lincap="round">
+                      </svg>
+                  </div>
+                  <div class="swiper-button-next after:hidden bottom-[193px]"style="top:unset">
+
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L8.07107 8.17107" stroke="#224F34" stroke-width="2" stroke-linecap="round" />
+                      <path d="M1 15.0713L8.07107 8.00022" stroke="#224F34" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                       <svg width="24" height="18" viewBox="0 0 24 18"fill="none" xmlns="http//www.w3.org/2000/svg">
+                    <path
+                    d="M5.55859 9.07812H5.96875C7.08203 9.07812 8.07812 9.50781 8.95703 10.3672C9.85547 11.207 10.304
+                    fill=#224F34">
+                    </svg>
+                  </div>
+              </div>
+        </cestion>
+
+        <!-- Slider Ends Here -->
+
+        <!-- Footer section Start Here -->
+
+         <footer class="bg-[#224F34] pt-[80px]">
+          <div class="footer-wrapper">
+            <div class="container max-w-[1380] mx-auto">
+              <div class="row flex pb-[154px] sm:flex-wrap">
+                <div class="col w-[35%] sm:w-[50%] order-1">
+                  <figure>
+                    <img src="images/Rivo.png" alt="">
+                  </figure>
+          
+                  <h6 class="text-[22px] font-medium text-white mt-[44px] mb-[24px]"> Social Media</h6>
+                </div>
+                  <div class="icon-wrappe flex gap-[36px]">
+
+              <svg width="134" height="18" viewBox="0 0 134 18" hill="none" xmlns="http://www.w3.org/2000/svg">
+              </svg>
+
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </svg>
+                </div>
+              
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </svg>
+           </div>
+       <div class="col w-[15%] sm:w-[50%] order-3">
+        <h3>Shop</h3>
+        <ul>
+          <li>
+            <a href="#" class="text-[20px] font-medium text-[#C2EFD4]">products"</a>
+            <a href="#" class="text-[20px] font-medium text-[#C2EFD4]">Overview</a>
+            <a href="#" class="text-[20px] font-medium text-[#C2EFD4]">pricing</a>
+            <a href="#" class="text-[20px] font-medium text-[#C2EFD4]">Releases</a>
+         </li>
+       </ul>
+    </div>
+         <div class="col w-[15%] sm:w-[50%] order-4">
+          <h3 class="text-[22px] font-medium text-white mt-[44px] mb-[24]">Company</h3>
+          <ul>
+            <li>
+              <a href="#" class="text-[20px] font-medium text-[#C2EFD4]">About us"</a>
+            <a href="#" class="text-[20px] font-medium text-[#C2EFD4]">Conteact</a>
+            <a href="#" class="text-[20px] font-medium text-[#C2EFD4]">News</a>
+            <a href="#" class="text-[20px] font-medium text-[#C2EFD4]">Support</a>
+            </li> 
+          </ul>
+         </div>
+         <div class="col w-[35%] sm:w-[50%] order-2">
+          <h3 class="text-[22px] font-medium text-white">Stay up to date</h3>
+          <form action="" class="pt-[38] flex">
+            <input type="email" placeholder="enter you email" class="border-2 border-[#A3F3BE] bg-transparent
+            placeholder:text-[20px] placeholder:font-normal placeholder:text-white py-[14px] pl-[28px] grow"requir>
+          </form>
+         </div>
+         <div class="copyright relative">
+          <ul class="flex gap-[35px] justify-end pb-[82px]">
+            <li>
+              <a href="#" class="text-white text-[20px] font-semibold">Terms</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-[20px] font-semibold">Privacy</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-[20px] font-semibold">Cookies</a>
+            </li>
+          </ul>
+         </div>
+          </div>
+         </footer>
+
+        <!-- Footer section Ends Here -->
+         
+              <script src="https://cdn.tailwindcss.com"></script>
+              <script src="https://cdn.jsdelivr.net/npm/swiper-bundle.min.js">
+               
+               var swiper = new swiper(".testimonial-slider", {
+                slideesperview: 3,
+                spaceBetween: 30,
+                loop:true,
+                outoplay:{
+                  delay:300,
+                },
+                navigation: {
+                nextEl: ".swiper-boutton-next",
+                prevEl: ".swiper-button-prev",
+              },
+            } );
+                module.exports = {
+                  theme: {
+                    extend: {
+
+                      spacing: {
+                        '175px': '175px',
+                      },
+                      fontFamily: {
+                        'poppins': ['"Poppins", sans-serif'],
+                      },
+                      colors: {
+                        'pri': '#224F34',
+                        'sec': '#C2EFD4',
+                        'dg': '#267D49'
+                      }
+                    }
+                  }
+                }
+              
+                
+              </script>
+</body>
+
+</html>
