@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORB WEBSITE</title>
+    <link rel="stylesheet" href="b5/css/bootstrap.min.css">
+
+    <!-- Link Swiper's CSS -->
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ </head>
+
+<body>
+    <!-- Header Start Here -->
+<header>
+    <div style="display: flex; justify-content: center; align-items: center; list-style-type: none; padding: 0; margin: 5px; background-color: wheat;">
+
+        <!-- Logo Section -->
+        <li style="margin: 0 10px; display: flex; justify-content: center; align-items: center;">
+            <img src="orb logo.png" width="160" height="40" title="ORB" style="display: block; background-color: whitesmoke;">
+        </li>
+    
+        <!-- Search Bar Section -->
+        <li style="margin: 0 100px; position: relative; width: 400px; padding: 10px; display: flex; align-items: center;">
+            <svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 350px; top: 50%; transform: translateY(-50%);">
+                <title>Search Icon</title>
+                <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <input class="Pke_EE" type="text" title="Search for Products, Brands and More" name="q" autocomplete="off" placeholder="Search for Products, Brands and More" value="" style="padding-left: 30px; width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+        </li>
+    
+        <!-- Login Section -->
+        <li style="margin: 0px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" alt="Login" class="-dOa_b L_FVxe" width="24" height="24">
+            <span style="margin-left: 5px;">Login</span>
+        </li>
+    
+        <!-- Chevron Icon Section (if any) -->
+        <li style="margin: 10px; display: flex; justify-content: center; align-items: center;">
+            <a href="Order.html" style="display: flex; justify-content: center; align-items: center; text-decoration: none;">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K" alt="Chevron" class="-dOa_b XdYXbi" width="25px" height="15px">
+            </a>
+        </li>
+        
+</li>
+        </li> 
+    
+        <!-- Cart Section -->
+        <li style="margin: 0 20px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt="Cart" class="_1XmrCc" width="24" height="24">
+            <a class="_1krdK5 _3jeYYh" href="/viewcart?exploreMode=true&amp;preference=FLIPKART" title="Cart" style="margin-left: 5px;">Cart</a>
+        </li>
+    
+        <!-- Become a Seller Section -->
+        <li style="margin: 0 20px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="Become a Seller" class="_1XmrCc" width="24" height="24">
+            <a class="_1krdK5 _3jeYYh" href="Products.html" title="Become a Seller" style="margin-left: 5px;">Become a Seller</a>
+        </li>
+    </ul>
+    </div>
+</header>
+    
+     <!-- Header Ends Here -->
+     
+      <!-- Header Start Here -->
+
+<header>
+    <div style="display: flex; justify-content: center; align-items: center; list-style-type: none; padding: 5px; margin: 5px; background-color: paleturquoise;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+     <a class="navbar-brand font-weight-bold ml-2" id="logo" href="#" style="font-weight: bold; font-size: 30px">Client Side Server.</a>
+
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+</button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mx-auto font-weight-bold">
+            <li class="nav-item active">
+                <a class="nav-link text-uppercase ml-4" href="Orb.html">HOME PAGE</a>
+            </li>
+               <a class="nav-link text-uppercase ml-4" id="menu" href="About.html">ABOUT US PAGE</a>
+            </li>
+
+            <li style="margin: 5px; display: flex; justify-content: center; align-items: center;">
+                <a href="About.html" style="display: flex; justify-content: center; align-items: center; text-decoration: none;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K" alt="Chevron" class="-dOa_b XdYXbi" width="15" height="12">
+                </a>
+            </li>
+
+           <li class="nav-item">
+              <a class="nav-link text-uppercase ml-4" id="menu" href="Products.html">PRODUCT PAGE</a>
+          </li> 
+          
+          <li style="margin: 5px; display: flex; justify-content: center; align-items: center;">
+            <a href="Products.html" style="display: flex; justify-content: center; align-items: center; text-decoration: none;">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K" alt="Chevron" class="-dOa_b XdYXbi" width="15" height="12">
+            </a>
+        </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link text-uppercase" id="menu" href="Order.html">ORDER NOW</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link text-uppercase" id="menu" href="Contact.html">CONTACT US</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link text-uppercase" id="menu" href="Admin.html"  style="color: #D401F5;">ADMIN LOGIN</a>
+            </li>
+         </ul>
+        </div>
+        </nav>
+    </div>
+</header>
+    
+    <!-- Header Section Ends -->
+	
+	<!--  Background Section Start Here  -->
+	<div class="contact_bg">
+		
+	</div>
+  
+  <!-- Watsapp icon -->
+  <a href="https://wa.me/message/6745N3S74AADC1" target="_blank" title="Need help? Whatsapp us" style="position:fixed; bottom: 48px; right: 26px;"><img src="assets/img/whatsapp1.png" height="50" width="50"></a>
+  
+	<br>
+	
+		<div class="">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9747354807355!2d77.27512521440715!3d28.63051929092426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcad2277af7d%3A0xe68dd5cbcfe7d692!2sLaxmi%20Nagar%20Metro%20Station!5e0!3m2!1sen!2sin!4v1593460016089!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+
+	<br><br  id="appointment"><br><br>
+		<!--  Body Section Start Here  -->
+	<div class="contact_body ">
+		<div class="text-center ">
+			<h1 class="text-uppercase">Contact us</h1>
+			<hr class="mt-3 mx-auto bg-primary" />
+		</div>
+		<br>
+
+		<div class="row py-5">
+			<div class="col-md-1">
+				
+			</div>
+			<div class="col-md-5 col-sm-12 get-in-touch-with-us ">
+                <h3 class=" text-uppercase pl-2">Get in touch with us :</h3>
+                <address class="pl-2">
+                  <i class="fa fa-home fa-2x my-3 mr-4"></i>
+                    Head Office U-149 Laxmi Nagar 
+                    <div class="address-right">New Delhi 110092 </div>
+                  <i class="fa fa-home fa-2x my-3 mr-4"></i>
+                    Primary Branch: Thakurdwara 
+                    <div class="address-right">Moradabad UP 244601 India</div>
+                    <i class="fa fa-home fa-2x my-3 mr-4"></i>
+                    Secondary Branch: Chandausi 
+                    <div class="address-right">Sambhal UP 244412 India</div>                  
+                <p>
+                  <br>
+                  <i class="fa fa-phone fa-2x  pr-4"></i> (+91) 9012267671 <br>
+                  <i class="fa fa-phone fa-2x pb-4 pr-4"></i> (+91) 9897584992 <br>
+                  <i class="fa fa-envelope fa-2x  pr-4"></i> support@thecomputersdr.com
+                  <br>
+                  <i class="fa fa-envelope fa-2x pr-4 mb-4"></i> info@thecomputersdr.com
+                </p>
+               </address>
+			</div>
+			
+			<div class="col-md-6 col-sm-12 ">
+				<h3 class="text-uppercase pl-2">Request Call Back</h3>
+
+
+				<form action="contact.php" method="POST" onsubmit=" return validation()" class=" form-group my-5" autocomplete="off">
+
+          <div class="form-group">
+            <input type="text"  class="form-control" id="username" name="name" placeholder="Your Name">
+            <span id="name_msg" class="text-danger"></span>
+          </div>
+
+					<div class="form-group">
+            <input type="text" class="form-control my-4" id="useremail" name="email" placeholder="Your E-mail">
+            <span id="email_msg" class="text-danger"></span>
+          </div>
+
+					<div class="form-group">
+            <input type="phone" class="form-control" id="usercontact" name="contact" placeholder="Your Contact">
+            <span id="contact_msg" class="text-danger"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control mt-4" id="usercity" name="city" placeholder="Your Locality">
+            <span id="city_msg" class="text-danger"></span>
+          </div>
+
+					<div class="form-group">
+            <select class="form-control my-4" id="userservice" name="service" required>
+            <option>Select Service</option>
+            <option>Computer</option>
+            <option>Laptop</option>
+            <option>Hardware & Software</option>
+            <option>Windows installation</option>
+            <option>Annual Maintenance</option>
+            <option>Remotly Support</option>
+            <option>Computer Slow</option>
+            <option>Virus Problem</option>
+            <option>Printer & Catridge</option>
+            <option>App Development</option>
+            <option>Data Backup & Recovery</option>
+            <option>Network Design & Support</option>
+            <option>Web designing & Development</option>
+            <option>Computer & Laptop Sales & Services</option>
+            
+          </select>
+          <span id="service_msg" class="text-danger"></span>
+          </div>
+
+           <div class="form-group">
+             <textarea class="form-control" id="usermessage" name="message" placeholder="Write your message" rows="4"></textarea>
+             <span id="message_msg" class="text-danger"></span>
+           </div>         
+					
+					<br>
+					<button type="submit" class="btn rounded-0 text-white" id="submit-button" name="submit_btn">SEND</button>
+				</form>
+			</div>
+		</div>	
+
+    
+	 			<!-- Footer Section Start Here -->
+
+    <footer>
+      <div class="footer bg-dark">
+        <div class="row">
+          
+          <div class="col-lg-4 col-md-4 col-12 pl-4  location text-white">
+            <h4 class="py-3">Get in touch with us : </h4>
+            <address>
+                      <i class="fa fa-home"></i>
+                       Head Office : U-149 Laxmi <br>                      
+                       <div class="pl-3">Nagar New Delhi 110092 </div><br>
+                       <i class="fa fa-home"></i> 
+                       Primary Branch: Thakurdwara<br>
+                       <div class="pl-3"> Moradabad UP 244601 India</div><br>
+                       <i class="fa fa-home"></i> 
+                       Secondary Branch: Chandausi<br>
+                       <div class="pl-3"> Sambhal UP 244012 India</div>                                    
+                  </address>
+          </div>
+          <div class="col-lg-1 col-md-1"></div>
+          <div class="col-lg-3 col-md-3 col-12 pl-4  contact text-white">
+            <h4 class="py-3">Contact Info :</h4>
+            <p>
+                    <i class="fa fa-phone pb-2"></i> (+91) 9012267671 <br>
+                    <i class="fa fa-phone"></i> (+91) 9897584992 <br>
+                    <div class="mail my-4">
+                      <i class="fa fa-envelope py-2"></i> support@thecomputersdr.com
+                    <br>
+                    <i class="fa fa-envelope"></i> info@thecomputersdr.com
+                    </div>
+                  </p>
+          </div>
+          <div class="col-lg-1 col-md-1"></div>
+          <div class="col-lg-3 col-md-3 col-12 pl-4 social  text-white">
+            <h4 class="text-white py-3 ">Social Network : </h4>
+                  <div class="pl-2">
+                    <a href="https://facebook.com/kapilsagarjet1/" class="mr-4 text-white" title="Facebook" target="_blank"><span class='fa fa-facebook-square fa-2x'  ></span></a>
+                    <a href="https://www.instagram.com/disismrsingh" class="mr-4 text-white" title="Instagram" target="_blank"><span class='fa fa-instagram fa-2x' ></span></a>
+                    <a href="https://twitter.com/disismrsingh" class="mr-4 text-white" title="Twitter" target="_blank"><span class='fa fa-twitter fa-2x pb-4' ></span></a>
+                  </div>           
+          </div>
+          
+        </div>
+      </div>
+      <div class="bg-primary text-white text-center py-4" width="100%" >
+        <span class="text-white text-center d-block h5">copyright  2024 Thecomputersdr.com Design By GAURAV CHAUHAN</span>
+        </div>
+    </footer>
+    
+    <script>
+
+    // Animate on Scrollpy for animation
+
+ 
+
+
+
+ 
+
+
+
+
