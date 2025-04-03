@@ -1,0 +1,23 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #007bff; /* Custom navbar color */
+}
+
+.nav-link {
+    color: white !important; /* Custom link color */
+}
+
+.bg-info {
+    background-color: #17a2b8 !important; /* Custom header color */
+}
+
+.card {
+    border: 1px solid #007bff; /* Custom border for cards */
+}
+
+.card-title {
+    color: #007bff; /* Custom color for card titles */
+}
