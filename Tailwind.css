@@ -1,0 +1,18 @@
+.best-selling .product-info .price-wrapper > span{
+    position: relative;
+}
+.best-selling .product-info .price-wrapper > span::after {
+    content: "";
+
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: -15px;
+border-right: 2px solid  #454545;
+height: 30px;
+
+}
+
+.swiper-slide-next {
+    background-color: #C2EFD4;
+}
